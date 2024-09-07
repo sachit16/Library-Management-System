@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - UrLMS</title>
+    <link href="~/Bootstrap/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/fontawesome-all.css" rel="stylesheet" />
+    <link href="~/Bootstrap/lmscustom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="~/Script/modernizr-2.8.3.js"></script>
+    <script src="~/Content/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body style="padding:unset">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Main/Home">
+                <img src="~/image/images.png"
+                     alt="" width="30"
+                     height="30">
+            </a>
+            <a class="navbar-brand" href="https://www.bing.com/images/search?view=detailV2&ccid=FqZ3XFU5&id=D537A5254FF94F740107C7720DBC9F79140A0E8E&thid=OIP.FqZ3XFU5_SDypeCK6QMDsgHaHa&mediaurl=https%3a%2f%2fmis.gcekarad.ac.in%2fGCEKMIS%2fIMAGES%2fGCEK_logo_new1.png&exph=1618&expw=1618&q=gcek&simid=608049013217698149&FORM=IRPRST&ck=BC95F3AF5144B878DF9D1DDF45A86646&selectedIndex=0&ajaxhist=0&ajaxserp=0">GCEK library</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Main/Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Main/Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Main/About">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servies
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item" style="text-align:end">
+                        <a class="nav-link" style="text-align:end" href="/Main/Login">Login </a>
+                    </li>
+
+
+
+                    <form class="navbar-nav justify-content-end" style="nav-right">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div style="padding-left:20px; padding-right:20px;">
+        @RenderBody()
+    </div>
+    <div>
+        <footer>
+            <div style="" class="card text-center text-white bg-dark">
+                <div class="card-header">
+                    Thank you for visiting us
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Social Platforms</h5>
+                    <div style="width: auto;" class="form-group">
+                        <span>
+                            <i class="fab fa-facebook-square"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-twitter-square"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+                <p>&copy; @DateTime.Now.Year - My ASP.Net Application</p>
+            </div>
+        </footer>
+    </div>
+    <div style="background-color:#292b2c;">
+        <div style="background-color: #292b2c; height: 8px; width: 450px">
+        </div>
+    </div>
+    <script src="~/Script/jquery-3.4.1.min.js"></script>
+    <script src="~/Script/bootstrap.min.js"></script>
+</body>
+</html>
+
+
